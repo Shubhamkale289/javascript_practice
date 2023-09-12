@@ -1,0 +1,30 @@
+html{
+    background-color: yellow;
+}
+body{
+    background-color: green;
+}
+
+#parent{
+    font-size: 2em;
+    background-color: blue;
+    height: 10vh;
+}
+#child{
+    font-size: 20px;
+}
+#gchild{
+    font-size: 2em; 
+    padding: 2em;
+    border: 1em solid rebeccapurple;
+}
+@media (max-width: 700px){
+    html{
+        background-color: aqua;
+    }
+}
+@media (min-width: 350px){
+    html{
+        background-color: plum;
+    }
+}

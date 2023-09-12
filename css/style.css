@@ -1,0 +1,78 @@
+h1{
+    border: 2px solid green;
+    /* display: none; */
+    visibility: visible;
+    
+}
+#span1{
+    margin-right: 450px;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+span:hover{
+    font-size: 50px;
+    color: blue;
+    background-color: aqua;
+}
+#primary-btn:visited{
+    color: white;
+}
+/* #primary-btn:hover{
+    background-color: rgb(135, 135, 187);
+    font-size: 100px; */
+/* }
+a:visited{
+    color: orange;
+}
+a:link{
+    color: yellow;
+}
+#primary-btn:active{
+    color: white;
+}
+a:active{
+    color: rebeccapurple;
+}
+div p{
+    background-color: yellow;
+}
+div div article{
+    background-color: blue;
+}
+div > article{
+    background-color: brown;
+} */
+div ~ p{
+    background-color: purple;
+}
+div ~ #ptag{
+    background-color: rgb(64, 128, 0);
+}
+button{
+    background-color: aqua;
+}
+div + button:hover{
+    font-size: 30px;
+    color: black;
+}
+p::first-letter{
+    font-size: 30px;
+}
+p::first-line{
+    color: yellow;
+}
+ul li::marker{
+    color: red;
+}
+#li1::marker{
+    color: green;
+}
+.commonLi::marker{
+    color: blue;
+}
+ol li::marker{
+    color: yellow;
+}
+#ptag :nth-child(even){
+    background-color: darkcyan;
+}

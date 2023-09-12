@@ -1,0 +1,10 @@
+.main-grid{
+    display: grid;
+    text-align: center;
+}
+@media (min-width: 650px){
+    .main-grid{
+        display: flex;
+        text-align: center;
+    }
+}
