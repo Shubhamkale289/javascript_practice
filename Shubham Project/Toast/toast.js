@@ -586,23 +586,49 @@
 //     return p;
 // }
 
-class User{
-    constructor(name, age, count){
-        this.name = name;
-        this.age = age;
-        this.count = count;
-    }
-    increament(){
-        this.count++
-    }
-    static validateName(sampleName){
-        if(sampleName.lenght > 4){
-            return false
-        }
-        return true
-    }
+// class User{
+//     constructor(name, age, count){
+//         this.name = name;
+//         this.age = age;
+//         this.count = count;
+//     }
+//     increament(){
+//         this.count++
+//     }
+//     static validateName(sampleName){
+//         if(sampleName.lenght > 4){
+//             return false
+//         }
+//         return true
+//     }
+// }
+
+// const u3 = new User('shubham', 10, 0);
+// console.log(u3.validateName());
+const productDisplayElementTag = document.querySelector('#productDisplay');
+const companyAProduct = [
+    {
+        productName: 'samsung s22',
+        price: 200,
+        description: 'good phone'
+    },
+    {
+        productName: 'iphone',
+        price: 22,
+        description: 'branded'
+    },
+]
+
+for(let product of companyAProduct){
+    const productContainerElement = document.createElement('div');
+    const h1Tag = document.createElement('h1');
+    h1Tag.textContent = product.productName;
+    const spanTag = document.createElement('span');
+    spanTag.textContent = product.price;
+    const descriptionTag = document.createElement('div');
+    descriptionTag.textContent = product.description;
+    productContainerElement.append(h1Tag);
+    productContainerElement.append(spanTag);
+    productContainerElement.append(descriptionTag);
+    productDisplayElementTag.append(productContainerElement);
 }
-
-const u3 = new User('shubham', 10, 0);
-console.log(u3.validateName());
-

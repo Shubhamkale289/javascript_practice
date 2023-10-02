@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="toast.js"></script>
+    <script src="./toast.js" defer></script>
+    <style>
+        #productDisplay{
+            display: flex;
+            flex-direction: colomn;
+        }
+        #productDisplay > *{
+            margin: 2em;
+            padding: 1em;
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="productDisplay"></div>
 </body>
 </html>
